@@ -5,10 +5,10 @@ Has minor cosmetic defects
 None.
 
 ## Major Issues
-*   **Page 12 Table Content Error**: The cell for "Ending Cash and Bond Balance" contains the value "$ 7,7863,850.42" in the OCR/PDF, which includes an extra digit ('7,' followed by '7863'). The HTML reproduces this exactly as written in the source, but it appears to be a typographical error in the source document itself.
-*   **Page 38/39 Link Omissions**: Several links listed in the "LINK MANIFEST" as having multiple distinct URLs mapped to parts of a phrase or separate words (e.g., "A-1. Closed Fiscal Year" having two separate links for "Closed Fiscal" and "Year") are not fully supported by the generated HTML, which often groups these into a single anchor or misses the secondary URL mapping. While the text is present, the specific granular hyperlink mapping requested in the manifest is partially missing or simplified.
+None.
 
 ## Minor Issues
-*   **Page 19 & 25 & 31 & 36 List Formatting**: The HTML for the pie chart data lists includes the text of the chart labels as list items, but the percentage values are sometimes inconsistently formatted (e.g., "Watershed Planning, 0.0%" is a list item, but in the PDF/OCR it is part of the chart label cluster). This does not affect content accuracy.
-*   **Page 24 Adjustment Row**: The table row "Adjustment to Cash Basis (rename Investment – Long Term" has an unclosed parenthesis at the end of the text. The source document text is "Adjustment to Cash Basis (rename Investment – Long Term", matching the HTML.
-*   **Page 37 Table Formatting**: In the table, the row "Tar Pamlico Nitrogen" and "Tar Pamlico Phosphorus" is missing the hyphen ("Tar-Pamlico") present in other sections of the document, though it matches the specific OCR text for the table on page 37.
+*   **Page 12:** The value for "Ending Cash and Bond Balance" contains a typographical error not present in the source PDF: "$ 7,7863,850.42" is written in the HTML, whereas the PDF displays "$ 7,783,850.42".
+*   **Page 14:** The value for "Ending Cash and Bond Balance" contains a typographical error not present in the source PDF: "$ 17,004,734.09" is written in the HTML, whereas the PDF displays "$ 17,004,374.09".
+*   **Page 17:** In the third bullet point, the text "32.23 wetland mitigation credits" is written in the HTML, while the source PDF specifies "32.230 wetland mitigation credits" (the trailing zero is missing).
+*   **Page 20:** The "Total Advanced Mitigation * (unassigned)" for Wetlands is listed as "8,532.415" in the HTML, whereas the source PDF table row for Wetlands lists "8,532.415" correctly in the final column, but the header row and subsequent text content may be slightly misaligned with the visual representation in the PDF. (Note: The value is technically correct, but the alignment check shows the PDF's table structure is complex).

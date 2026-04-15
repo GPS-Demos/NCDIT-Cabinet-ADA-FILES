@@ -8,5 +8,5 @@ None.
 None.
 
 ## Minor Issues
-- Page 38 (HTML): The table headers do not match the PDF source table precisely. The HTML lists "Lead Office" and "Recovery Plan" and "Recovery Plan Action Status" as headers, but the PDF source (page 38) actually splits "Lead Office" into two rows/lines ("Lead" and "Office") and has headers "Recovery Plan" and "Recovery Plan Action Status". While this is flattened per instructions, the source PDF actually contains the header "Lead / Office" (as "Lead" on one line and "Office" on the next in the OCR/PDF). This is a minor formatting difference in header label concatenation.
-- Page 61 (HTML): The "TABLE" for coordinate values (MW-1 to MW-7) lists columns "WELL ID", "GRID NORTHING", "GRID EASTING", and "TOP OF CASING ELEVATION". The PDF source for this table contains these exact headers. No issues identified.
+- Page 2, Section 4.1: The PDF TOC has "Assessment Activities and Interim Actions" under Section 4.0 as "4.1". The HTML lists this as "4.1" but lacks the link anchor, whereas sections 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, and 11.0 have links. This is a minor structural inconsistency in the TOC navigation.
+- Page 2: The text "Groundwater Contaminant Concentration Map" is present in the PDF as Figure 4, and it is in the HTML, but the HTML misses the trailing space or potential icon placeholder that might have existed in the source document layout, though the content is accurate.
