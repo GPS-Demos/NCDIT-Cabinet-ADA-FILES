@@ -2,11 +2,13 @@
 Has serious structural or content issues
 
 ## Critical Issues
-1. **Table Data Error (Cell Insertion/Duplication):** In the row for 1/1/2013, the HTML inserts "EMC Model Approval" into the "Cape Fear – Neuse River Basin Hydrologic Model" column. In the PDF source, this cell is empty.
-2. **Table Data Error (Cell Insertion/Duplication):** In the row for 2/1/2013, the HTML inserts "EMC Model Approval" into the "Cape Fear – Neuse River Basin Hydrologic Model" column. In the PDF source, this cell is empty.
-3. **Table Data Error (Cell Insertion/Duplication):** In the row for 4/1/2013, the HTML inserts "EMC Model Approval" into the "Cape Fear – Neuse River Basin Hydrologic Model" column. In the PDF source, this cell is empty.
-4. **Table Data Error (Cell Insertion/Duplication):** In the row for 5/1/2013, the HTML inserts "EMC Model Approval" into the "Cape Fear – Neuse River Basin Hydrologic Model" column. In the PDF source, this cell is empty.
-5. **Table Data Error (Hallucinated Content):** The table rows for 11/14/2013 and 9/11/2014 erroneously repeat text in the "Cape Fear River Basin Water Supply Plan" column that does not exist in the source PDF for those specific cells (the source PDF leaves those specific cells blank).
+*   **Table Data Accuracy/Hallucination:** In the table, the text "EMC Model Approval" has been hallucinated into several cells where it does not exist in the source PDF:
+    *   Row 4 (1/1/2013), Column 4: The PDF has an empty cell, but the HTML contains "EMC Model Approval".
+    *   Row 6 (4/1/2013), Column 4: The PDF has an empty cell, but the HTML contains "EMC Model Approval".
+    *   Row 7 (5/1/2013), Column 4: The PDF has an empty cell, but the HTML contains "EMC Model Approval".
+*   **Table Data Accuracy/Missing Content:**
+    *   Row 2 (11/1/2012), Column 2 and 3: The HTML contains empty cells, but the PDF contains empty cells (correct), though the structure of the source PDF alignment suggests the "Updated model completed" text for 11/1/2012 is actually associated with the third column (Hydrologic Model), while the HTML correctly placed it there. However, there is a lack of clarity in row alignment compared to the PDF visual layout.
+    *   Row 9 (11/14/2013): The HTML duplicates the cell content ("Final Water Supply Plan...") into the second and third columns. In the source PDF, this is a single wide row spanning columns 2 and 3. While the instructions allow for repeating values instead of colspan, the content is accurate to the document.
 
 ## Major Issues
 None.

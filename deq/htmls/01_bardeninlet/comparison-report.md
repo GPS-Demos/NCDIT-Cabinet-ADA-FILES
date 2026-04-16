@@ -2,10 +2,7 @@
 Has serious structural or content issues
 
 ## Critical Issues
-The HTML output is almost entirely missing the text content present in the source PDF. The nautical chart contains a significant amount of text that has been omitted, including:
-*   Geographic names: "Lookout Bight", "Barden Inlet", "CAPE LOOKOUT", "Cape Pt".
-*   Navigational aids and labels: "R \"4\" Fl R 6s", "Fl G 4s 3M \"1\" PA", "COLREG DEMARCATION LINE", "80.525a (see note A)", "(use chart 11545)", "Fl 15s 156ft 25M", "RW \"E\" Mo (A)", "RW \"W\" Mo (A)", "R \"2\" Q R", "Breakers", "Obsin PA", "Wreck".
-*   Numerous depth soundings (numbers indicating water depth throughout the chart).
+The HTML output is almost entirely missing the document content. The PDF contains extensive text labels, navigation data (depth markers, buoy identifiers such as "R '4' FI R 6s", "Fl G 4s 3M", "CAPE LOOKOUT", "FI 15s 156ft 25M"), and geographical labels ("Lookout Bight", "Barden Inlet", "Cape Pt"). None of this text is represented in the provided HTML.
 
 ## Major Issues
 None.

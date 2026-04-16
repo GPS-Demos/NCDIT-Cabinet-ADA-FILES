@@ -5,14 +5,14 @@ Has minor cosmetic defects
 None.
 
 ## Major Issues
-*   **Table Content/Structure (Page 48/49):** The periodicity chart on page 48 is represented as a table in the HTML, but the table body is entirely empty (all cells are blank). While the visual chart uses blocks for "Spawning" and "Early Life Stage," the tabular data in the HTML fails to represent this information at all.
-*   **Missing Text (Page 48/49):** Due to the table issue above, the legend text ("Spawning", "Early Life Stage...", etc.) is present as separate paragraph blocks below the table rather than being integrated as data.
+None.
 
 ## Minor Issues
-*   **Page 5:** The WUA column/legend text ("WUA per 1000 linear feet") is fragmented in the HTML, appearing both as a heading-like line and mixed with the list of species abbreviations.
-*   **Page 13:** The text "Eleva- tion (ft)" is broken up in the OCR/HTML rendering, appearing as separate fragments.
-*   **Page 34:** The text "Low Flow (8 cfs)" is present in the source but is rendered with character spacing issues and broken parentheses ("() 8 cfs )") in the HTML.
-*   **Page 35:** The text "Middle Flow (37 cfs)" is rendered with broken parentheses ("() 37 cfs )").
-*   **Page 36:** The text "Mid-High Flow (50 cfs)" is rendered with broken parentheses ("() 50 cfs )").
-*   **Page 37:** The text "High Flow (67 cfs)" is rendered with broken parentheses ("() 67 cfs )").
-*   **Page 51-53:** The "Option" titles in the HTML contain repeated text (e.g., "Option 1: Existing Conditions Option 1: Existing Conditions") which is a minor artifact of the conversion process.
+- **Page 4 (Screenshot vs HTML):** The HTML contains separate `<p>` tags for `River Stage (ft)` and `Discharge (cubic ft / sec)` and the axis numbers, which do not exist as distinct text elements in the same way on the slide; however, this is a reasonable representation of the chart data.
+- **Page 11 and 57:** The HTML adds the text "Transect Selection & Setup", "PHABSIM Modeling", "Habitat Results", and "Study Report" as duplicate list items at the end of several lines (e.g., `<li>4. Transect Selection & Setup Transect Selection & Setup</li>`). This is a result of the OCR reading the labels twice due to the visual layout on the slides.
+- **Page 20 (Table):** The row `Total | 14 | 3,764 | 100` in the HTML table includes an extra line break/space issue in the OCR output (`Total | 14 | 3 764 , 100`), but the table itself is rendered correctly in the HTML.
+- **Page 34:** The text "Low Flow (8 cfs)" is parsed as `Low Flow () 8 cfs )` due to the OCR interpreting the parentheses around the flow value.
+- **Page 35:** The text "Middle Flow (37 cfs)" is parsed as `Middle Flow () 37 cfs )`.
+- **Page 36:** The text "Mid-High Flow (50 cfs)" is parsed as `Mid-High Flow () 50 cfs )`.
+- **Page 37:** The text "High Flow (67 cfs)" is parsed as `High Flow () 67 cfs )`.
+- **Page 51, 52, 53:** The HTML includes redundant text from the page headers (e.g., `Option 1: Existing Conditions Option 1: Existing Conditions`), which is a minor artifact of the OCR extraction.
